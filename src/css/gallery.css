@@ -33,6 +33,12 @@
   transition: background-color 250ms linear;
 }
 
+.search-btn:hover,
+.search-btn:focus {
+  background-color: #cfd3d1;
+  border: 1px solid #cfd3d1;
+}
+
 .activity-icon {
   justify-content: center;
   align-items: center;
@@ -44,13 +50,13 @@
   font-size: 14px;
   padding: 10px 20px;
   background-color: #2ecc71;
-  border-radius: 0px 2px 2px 0px;
+  border-radius: 2px;
   margin-bottom: 30px;
   color: #ffffff;
   border: 1px solid #2ecc71;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 250ms linear;
+  transition: transform 300ms;
 }
 
 .load-more {
@@ -62,12 +68,11 @@
   display: none;
 }
 
-.search-btn:hover,
-.search-btn:focus,
 .load-more:hover,
 .load-more:focus {
-  background-color: #cfd3d1;
+  background-color: #05be62;
   border: 1px solid #cfd3d1;
+  transform: scale(1.1);
 }
 
 .gallery,
@@ -89,7 +94,6 @@
   flex-basis: calc((100% - 80px) / 4);
   border: 2px solid rgb(241, 238, 238);
   border-radius: 8px;
-  /* overflow: hidden; */
   transition: all 0.3s;
   text-decoration: none;
 }
