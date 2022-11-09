@@ -5,6 +5,11 @@
   margin: 0 auto;
   justify-content: center;
   border-radius: 1px;
+  transition: transform 300ms;
+}
+
+.search-form:hover {
+  transform: scale(1.05);
 }
 
 .search-input {
